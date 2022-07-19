@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6d3a8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #36362b;
+    font-family: 'Rubik Moonrocks', cursive;    
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /*border: 1px solid red;*/
+    margin: auto auto;
+}
+
+input {
+    height: 120px;
+    font-size: 1rem;
+    width: 80%;
+    padding-left: 10%;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    background: #5d917d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+   /* border: 1px solid blue;*/
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item.clicado {
+    background: #5d917d;    
+}
+
+.item.clicado.item-nome {
+    text-decoration: line-through;
+    color: #e6d3a8;    
+} 
+
+.tem-icone {
+    flex: 20%;
+    /*border: 1px solid orange;*/
+    text-align: center; 
+    font-size: 2rem;   
+}
+
+.item-nome {
+    flex: 60%;
+    /*border: 1px solid deeppink;*/   
+    font-size: 20px;
+    font-weight: bold; 
+    color: #36362b;
+}
+
+.item-botao {
+    flex: 20%;
+    /*border: 1px solid green;*/    
+}
+
+.delete {
+    background: rgb(152, 60, 17);
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+}
+
+.mdi-check-circle {
+    color: rgb(6, 221, 31);
+}
